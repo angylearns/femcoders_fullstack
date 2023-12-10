@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Montserrat:wght@700&display=swap');
+
+body {
+    width: 80%;
+    margin:auto;
+    display: flex;
+    background-color: rgb(255, 127, 84);
+    margin: 1vh auto;
+    font-family: 'Crimson Pro', serif;
+}
+
+main {
+    padding: 1vh;
+    background-color: rgba(255, 255, 255, 0.538);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px #3632325c;
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header figure {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    max-width: 100%;
+}
+
+header img {
+    max-width: 70%;
+    border-radius: 5px;
+    box-shadow: 5px 5px #ff919187;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid rgb(255, 127, 84);
+}
+figcaption {
+    font-size: small;
+    font-style: italic;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+section img {
+    width: 100%;
+    border-radius: 5px;
+}
+/* 
+1) Modifique tipos de letra, tamaños de letra, colores de letra y colores de fondo. 
+
+2) Modifique el ancho y el alto de los elementos. 
+
+3) Dé bordes a los elementos, eligiendo el grosor, el tipo de borde y el redondeado. 
+
+4) Dé márgenes internos y externos a los elementos. 
+
+5) Dé posicionamiento a los elementos, de manera tal que no queden todos uno debajo del 
+otro sin más 
+*/
