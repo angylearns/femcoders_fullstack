@@ -33,7 +33,7 @@ main {
     background-color: lightgrey;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1vh;
+    row-gap: 1vh;
     justify-items: center;
     align-items: center;
     padding: 10px 0;
