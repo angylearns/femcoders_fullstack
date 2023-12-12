@@ -1,0 +1,44 @@
+/* TODO: To see what is going on with the height of the main container and why it is a few pxs bigger than the image in it. */
+
+
+
+* {
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body {
+    height: 100vh;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #975733;
+}
+
+header .nav_logo {
+    width: 20%;
+}
+
+header .nav_logo img {
+    width: 10vw;
+}
+
+nav .nav_menu {
+    width: 80%;
+    display: flex;
+}
+
+nav .nav_menu li {
+    list-style: none;
+}
+
+.main_img {
+    width: 100%;
+}
+
+.social .social_logo {
+    height: 4vh;
+}
+
