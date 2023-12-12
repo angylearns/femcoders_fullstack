@@ -1,5 +1,6 @@
 /* TODO: To see what is going on with the height of the main container and why it is a few pxs bigger than the image in it. */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
 * {
@@ -8,7 +9,8 @@
 }
 
 body {
-    height: 100vh;
+    margin: 0 auto;
+    font-family: Montserrat, 'sans-serif';
 }
 
 header, footer {
@@ -18,27 +20,31 @@ header, footer {
 }
 
 header .nav_logo {
-    width: 20%;
+    width: 50%;
+}
+
+header nav {
+    width: 50%;
 }
 
 header .nav_logo img {
-    width: 10vw;
+    width: 80px;
 }
 
-nav .nav_menu {
-    width: 80%;
+header nav .nav_menu {
     display: flex;
+    padding: 0;
+    justify-content: space-between;
 }
 
-nav .nav_menu li {
+header nav .nav_menu li {
     list-style: none;
 }
 
-.main_img {
+main img {
     width: 100%;
 }
 
-.social .social_logo {
+section.social .social_logo {
     height: 4vh;
 }
-
