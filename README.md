@@ -4,3 +4,5 @@ This amazing bootcamp (nov/2023 - may/2024) is going to be the definitive step t
 
 *07/dec/2023* - Starting with HTML & CSS: Flexbox, grid, responsive design...  
 *14/dec/2023* - Learning GIT environment and commands.
+*8/jan/2024* - Starting with JavaScript.
+*10/jan/2024* - Presentation of the first project.
