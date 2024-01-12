@@ -39,16 +39,16 @@ sumNums();
 
 
 // 101. Lea un número y devuelva la mitad. || Read a number and return its half.
-function halfNum() {
+function getHalfNum() {
     let thisNumber = 20;
     console.log("The half of " + thisNumber + " is " + thisNumber / 2);
 }
 
-halfNum();
+getHalfNum();
 
 
 // 110. Lea dos números y devuelva el mayor. || Read two numbers and return the greater one.
-function greaterOfTwo() {
+function findGreaterOfTwo() {
     let numberA = 10;
     let numberB = 19;
 
@@ -61,11 +61,11 @@ function greaterOfTwo() {
     }
 }
 
-greaterOfTwo();
+findGreaterOfTwo();
 
 
 // 111. Lea tres números y devuelva el mayor. || Read three numbers and return the greater one.
-function greaterOfThree() {
+function findGreaterOfThree() {
     let theGreatest;
     let numberA = 194;
     let numberB = 190;
@@ -82,10 +82,10 @@ function greaterOfThree() {
     console.log("The greatest number is " + theGreatest);
 }
 
-greaterOfThree();
+findGreaterOfThree();
 
 // 1000. Lea dos números e indique si son iguales. || Read two numbers and indicate if they are equal.
-function areEqual() {
+function areEqualNums() {
     let numberA = 69;
     let numberB = 69;
 
@@ -96,15 +96,27 @@ function areEqual() {
     }
 }
 
-areEqual();
+areEqualNums();
 
 // 1001. Lea dos nombres e indique si son iguales. || Read two names and indicate if they are equal.
+function areEqualNames() {
+    let nameA = "Angy";
+    let nameB = "Angy";
 
+    if (nameA === nameB) {
+        console.log("The names are equal.")
+    } else {
+        console.log("The names are not equal.");
+    }
+}
+
+areEqualNames();
 
 // 1010.  Lea dos números y devuelva “Verdadero” si los dos son positivos o los dos son negativos. En caso contrario, que devuelva “Falso”. || Read two numbers and return "True" if both are positive or both are negative. Otherwise, return "False".
 
 
-// 1011 Lea dos números y devuelva “Verdadero” si uno es negativo y el otro positivo. En caso contrario, que devuelva “Falso”. || Read two numbers and return "True" if one is negative and the other is positive. Otherwise, return "False".
+
+// 1011. Lea dos números y devuelva “Verdadero” si uno es negativo y el otro positivo. En caso contrario, que devuelva “Falso”. || Read two numbers and return "True" if one is negative and the other is positive. Otherwise, return "False".
 
 
 // 1100. Lea 10 números y devuelva el mayor. || Read 10 numbers and return the greater one.
