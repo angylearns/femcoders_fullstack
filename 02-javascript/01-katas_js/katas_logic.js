@@ -1,4 +1,6 @@
-// En JS, para cada kata diseñe una función tal que al llamarla por consola || In JavaScript, for each kata, design a function such that when calling it in the console.
+// ESTAS KATAS SE LEEN POR TERMINAL || THESE KATAS ARE READ IN THE TERMINAL
+
+// Enunciado: En JS, para cada kata diseñe una función tal que al llamarla por consola || Statement: In JavaScript, for each kata, design a function such that when calling it in the console.
 
 // 1. Muestre un “¡Hola Mundo!” por consola. || Display a "Hello World!" in the console.
 function sayHi() {
@@ -6,6 +8,7 @@ function sayHi() {
 }
 
 sayHi();
+
 
 // 10. Lea tu nombre y devuelva un “¡Hola tuNombre!”. || Read your name and return a "Hello yourName!".
 function sayHelloName() {
@@ -15,6 +18,7 @@ function sayHelloName() {
 
 sayHelloName();
 
+
 // 11. Lea un número y devuelva el doble. || Read a number and return its double.
 function doubleNum() {
     let theNumber = 9;
@@ -22,6 +26,7 @@ function doubleNum() {
 }
 
 doubleNum();
+
 
 // 100. Lea dos números y devuelva su suma. || Read two numbers and return their sum.
 function sumNums() {
@@ -32,6 +37,7 @@ function sumNums() {
 
 sumNums();
 
+
 // 101. Lea un número y devuelva la mitad. || Read a number and return its half.
 function halfNum() {
     let thisNumber = 20;
@@ -39,6 +45,7 @@ function halfNum() {
 }
 
 halfNum();
+
 
 // 110. Lea dos números y devuelva el mayor. || Read two numbers and return the greater one.
 function greaterOfTwo() {
@@ -55,6 +62,7 @@ function greaterOfTwo() {
 }
 
 greaterOfTwo();
+
 
 // 111. Lea tres números y devuelva el mayor. || Read three numbers and return the greater one.
 function greaterOfThree() {
@@ -78,7 +86,7 @@ greaterOfThree();
 
 // 1000. Lea dos números e indique si son iguales. || Read two numbers and indicate if they are equal.
 function areEqual() {
-    let numberA = 19;
+    let numberA = 69;
     let numberB = 69;
 
     if (numberA == numberB) {
@@ -87,6 +95,8 @@ function areEqual() {
         console.log("The numbers are not equal");
     }
 }
+
+areEqual();
 
 // 1001. Lea dos nombres e indique si son iguales. || Read two names and indicate if they are equal.
 
