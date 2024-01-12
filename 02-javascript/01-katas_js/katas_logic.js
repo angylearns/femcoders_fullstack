@@ -4,47 +4,47 @@
 
 // 1. Muestre un “¡Hola Mundo!” por consola. || Display a "Hello World!" in the console.
 function sayHi() {
-    console.log("¡Hola mundo!");
+    return "¡Hola, mundo!";
 }
 
-sayHi();
+console.log(sayHi());
 
 
 // 10. Lea tu nombre y devuelva un “¡Hola tuNombre!”. || Read your name and return a "Hello yourName!".
 function sayHelloName() {
     let name = "Angy";
-    console.log("¡Hola, " + name + "!");
+    return "¡Hola, " + name + "!";
 }
 
-sayHelloName();
+console.log(sayHelloName());
 
 
 // 11. Lea un número y devuelva el doble. || Read a number and return its double.
 function doubleNum() {
     let theNumber = 9;
-    console.log("The double of " + theNumber + " is " + theNumber * 2);
+    return "The double of " + theNumber + " is " + theNumber * 2;
 }
 
-doubleNum();
+console.log(doubleNum());
 
 
 // 100. Lea dos números y devuelva su suma. || Read two numbers and return their sum.
 function sumNums() {
     let numberA = 2;
     let numberB = 5;
-    console.log("The sum of " + numberA + " and " + numberB + " is " + (numberA + numberB));
+    return "The sum of " + numberA + " and " + numberB + " is " + (numberA + numberB);
 }
 
-sumNums();
+console.log(sumNums());
 
 
 // 101. Lea un número y devuelva la mitad. || Read a number and return its half.
 function getHalfNum() {
     let thisNumber = 20;
-    console.log("The half of " + thisNumber + " is " + thisNumber / 2);
+    return "The half of " + thisNumber + " is " + thisNumber / 2;
 }
 
-getHalfNum();
+console.log(getHalfNum());
 
 
 // 110. Lea dos números y devuelva el mayor. || Read two numbers and return the greater one.
@@ -53,16 +53,15 @@ function findGreaterOfTwo() {
     let numberB = 19;
 
     if (numberA > numberB) {
-        console.log("The greater number is " + numberA);
+        return "The greater number is " + numberA;
     } else if (numberB > numberA) {
-        console.log("The greater number is " + numberB);
+        return "The greater number is " + numberB;
     } else {
-        console.log("The numbers are equal");
+        return "The numbers are equal";
     }
 }
 
-findGreaterOfTwo();
-
+console.log(findGreaterOfTwo());
 
 // 111. Lea tres números y devuelva el mayor. || Read three numbers and return the greater one.
 function findGreaterOfThree() {
@@ -79,10 +78,10 @@ function findGreaterOfThree() {
         theGreatest = numberC;
     }
 
-    console.log("The greatest number is " + theGreatest);
+    return "The greatest number is " + theGreatest;
 }
 
-findGreaterOfThree();
+console.log(findGreaterOfThree());
 
 // 1000. Lea dos números e indique si son iguales. || Read two numbers and indicate if they are equal.
 function areEqualNums() {
@@ -90,13 +89,13 @@ function areEqualNums() {
     let numberB = 69;
 
     if (numberA == numberB) {
-        console.log("The numbers are equal");
+        return "The numbers are equal";
     } else {
-        console.log("The numbers are not equal");
+        return "The numbers are not equal";
     }
 }
 
-areEqualNums();
+console.log(areEqualNums());
 
 // 1001. Lea dos nombres e indique si son iguales. || Read two names and indicate if they are equal.
 function areEqualNames() {
@@ -104,20 +103,35 @@ function areEqualNames() {
     let nameB = "Angy";
 
     if (nameA === nameB) {
-        console.log("The names are equal.")
+        return "The names are equal.";
     } else {
-        console.log("The names are not equal.");
+        return "The names are not equal.";
     }
 }
 
-areEqualNames();
+console.log(areEqualNames());
 
 // 1010.  Lea dos números y devuelva “Verdadero” si los dos son positivos o los dos son negativos. En caso contrario, que devuelva “Falso”. || Read two numbers and return "True" if both are positive or both are negative. Otherwise, return "False".
+function areBothNegativeAndPositive() {
+    let numberA = -20349;
+    let numberB = -20349;
 
+    return numberA > 0 && numberB > 0 || numberA < 0 && numberB < 0 ? "True" : "False";
+}
+
+console.log(areBothNegativeAndPositive());
 
 
 // 1011. Lea dos números y devuelva “Verdadero” si uno es negativo y el otro positivo. En caso contrario, que devuelva “Falso”. || Read two numbers and return "True" if one is negative and the other is positive. Otherwise, return "False".
+function areOneNegativeAndOnePositive() {
+    let numberA = 0;
+    let numberB = 0;
 
+
+    return numberA > 0 && numberB < 0 || numberA < 0 && numberB > 0 ? true : false;
+}
+
+console.log(areOneNegativeAndOnePositive());
 
 // 1100. Lea 10 números y devuelva el mayor. || Read 10 numbers and return the greater one.
 
