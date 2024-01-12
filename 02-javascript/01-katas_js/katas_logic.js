@@ -12,8 +12,8 @@ sayHi();
 
 // 10. Lea tu nombre y devuelva un “¡Hola tuNombre!”. || Read your name and return a "Hello yourName!".
 function sayHelloName() {
-    let myName = "Angy";
-    console.log("¡Hola, " + myName + "!");
+    let name = "Angy";
+    console.log("¡Hola, " + name + "!");
 }
 
 sayHelloName();
@@ -30,9 +30,9 @@ doubleNum();
 
 // 100. Lea dos números y devuelva su suma. || Read two numbers and return their sum.
 function sumNums() {
-    let numOne = 2;
-    let numTwo = 5;
-    console.log("The sum of " + numOne + " and " + numTwo + " is " + (numOne + numTwo));
+    let numberA = 2;
+    let numberB = 5;
+    console.log("The sum of " + numberA + " and " + numberB + " is " + (numberA + numberB));
 }
 
 sumNums();
