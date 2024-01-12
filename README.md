@@ -2,7 +2,7 @@
 
 ![Coders](img/coders.png)
 
-This amazing bootcamp (nov/2023 - may/2024) is going to be the definitive step to become a professional Full-stack Developer and to start building a consistent and exciting professional career.
+In this repository I'll be uploading all the practices of what I'm learning in the Full-Stack Web Development bootcamp (nov/2023 - may/2024), which is going to be the definitive step to become a professional Full-stack Developer and to start building a consistent and exciting professional career.
 
 ## Dates 📅
 
