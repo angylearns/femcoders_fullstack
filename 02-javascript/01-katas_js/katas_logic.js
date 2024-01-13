@@ -204,5 +204,28 @@ function sumCharacters() {
 console.log(sumCharacters());
 
 // 10010. Lea 10 números por consola y devuelva el tercero mayor. || Read 10 numbers in the console and return the third greatest one.
+const readline = require('readline');
 
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
+let numbers = [];
+
+const askNumbers = (n) => {
+ if (n > 0) {
+    rl.question('Please, enter a number: ', (numero) => {
+        numbers.push(parseInt(numero));
+        askNumbers(n - 1);
+    });
+    } else {
+        rl.close();
+        let sortedNumbers = numbers.sort((a, b) => a - b);
+        let thirdGreatest = sortedNumbers[numbers.length-3];
+        // Couldn't use return due to the asynchronous nature of rl.question() - I have to learn more about it
+        console.log(`The third greatest number of ${sortedNumbers.join(", ")} is ${thirdGreatest}`);
+    }
+};
+
+askNumbers(10); 
