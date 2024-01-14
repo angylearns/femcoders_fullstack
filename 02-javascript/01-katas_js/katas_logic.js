@@ -223,6 +223,7 @@ const askNumbers = (n) => {
         rl.close();
         let sortedNumbers = numbers.sort((a, b) => a - b);
         let thirdGreatest = sortedNumbers[numbers.length-3];
+        
         // Couldn't use return due to the asynchronous nature of rl.question() - I have to learn more about it
         console.log(`The third greatest number of ${sortedNumbers.join(", ")} is ${thirdGreatest}`);
     }
