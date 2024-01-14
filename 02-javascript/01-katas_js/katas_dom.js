@@ -41,9 +41,20 @@ function hideAndSeek() {
     }
 }
 
-// TO BE CONTINUED
-
 // 7) Haya un recuadro y un botón que permita crear una caja dentro de ese recuadro una vez. || Has a box and a button that allows you to create a box inside of that box once.
+function createBox() {
+    let sectionK7 = document.getElementById("k7");
+    let div = document.querySelector('div');
+    
+    if (!sectionK7.contains(div)) {
+        let newDiv = document.createElement("div");
+        newDiv.classList.add("divK7");
+        let btn = document.querySelector("#k7 button");
+        sectionK7.insertBefore(newDiv, btn);
+    }
+}
+
+
 // 8) Haya un recuadro y un botón que permita crear una caja dentro de ese recuadro tantas veces como se quiera. || Has a box and a button that allows you to create a box inside of that box as many times as you want.
 // 9) Haya un recuadro y un botón que permita crear una caja dentro de ese recuadro hasta cinco veces máximo. || Has a box and a button that allows you to create a box inside of that box up to five times.
 // 10) Haya un recuadro, un botón que permita crear cajas dentro de ese recuadro y otro botón que permita eliminarlas, de una en una. || Has a box, a button that allows you to create boxes inside of that box and another button that allows you to delete them one by one.
