@@ -6,10 +6,32 @@ In this repository I'll be uploading all the practices of what I'm learning in t
 
 ## Dates 📅
 
-**07/dec/2023** - Starting with HTML & CSS: Flexbox, grid, responsive design... <br>
-**14/dec/2023** - Learning GIT environment and commands. <br>
-**08/jan/2024** - Starting with JavaScript. <br>
-**10/jan/2024** - Presentation of the first project.
+<table>
+   <tr>
+      <td>07/dec/2023</td>
+      <td>Starting with HTML & CSS: Flexbox, grid, responsive design...</td>
+   </tr>
+   <tr>
+      <td>14/dec/2023</td>
+      <td>Learning GIT environment and commands.</td>
+   </tr>
+   <tr>
+      <td>08/jan/2024</td>
+      <td>Starting with JavaScript.</td>
+   </tr>
+   <tr>
+      <td>10/jan/2024</td>
+      <td>Presentation of the <a src="https://github.com/angylearns/femtech_g3">first project</a>.</td>
+   </tr>
+    <tr>
+      <td>19/jan/2024</td>
+      <td>Presentation of the <a src="https://github.com/angylearns/adminlistas_g4">second project</a>.</td>
+   </tr>
+    <tr>
+      <td>22/jan/2024</td>
+      <td>Starting with ReactJS.</td>
+   </tr>
+</table>
 
 ## Parts 📑
 
