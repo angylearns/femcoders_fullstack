@@ -1,10 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+import Header from './components/Header'
+import SectionIndex from './components/SectionIndex'
+import './index.css'
+import Button from './components/Button'
+
+ReactDOM.createRoot(document.getElementById('header')).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Header />
+  </React.StrictMode>
+)
+
+ReactDOM.createRoot(document.getElementById('sectionIndex')).render(
+  <React.StrictMode>
+    <SectionIndex />
+  </React.StrictMode>
 )
