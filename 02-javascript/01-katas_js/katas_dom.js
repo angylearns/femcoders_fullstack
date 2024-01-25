@@ -2,7 +2,8 @@
 
 // 1) Haya texto y un botón que permita modificar ese texto. || Has a text and a button that allows you to modify that text.
 function changeText() {
-    document.querySelector('#k1 p').innerHTML = "Mi <em>modificado</em> texto.";
+    let texto = prompt("Escribe el nuevo texto");
+    document.querySelector('#k1 p').innerHTML = texto;
 }
 
 // 2) Haya texto y un botón que permita cambiar el color del texto. || Has a text and a button that allows you to change the color of the text.
@@ -14,21 +15,22 @@ function changeColor() {
 function underline() {
     document.querySelector('#k3 p').style.textDecoration = 'underline';
 }
+
 // 4) Haya texto y un botón que permita ocultar el texto. || Has a text and a button that allows you to hide the text.
 function hide() {
     document.querySelector('#k4 p').style.display = 'none';
 }
+
 // 5) Haya texto y un mismo botón que haga alternar el texto entre subrayado y no subrayado. || Has a text and a button that allows you to alternate the text between underlined and not underlined.
 function changeUnderline() {
     let paragraph = document.querySelector('#k5 p');
 
-    if (paragraph.style.textDecoration === "") {
+    if (paragraph.style.textDecoration === '') {
         paragraph.style.textDecoration = 'underline';
-    } else if (paragraph.style.textDecoration === 'underline') {
+    } else {
         paragraph.style.textDecoration = '';
     }
 }
-
 
 // 6) Haya texto y un mismo botón que permita alternar el texto entre oculto y no oculto. || Has a text and a button that allows you to alternate the text between hidden and not hidden.
 function hideAndSeek() {
