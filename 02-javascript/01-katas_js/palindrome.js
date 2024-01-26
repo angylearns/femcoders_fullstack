@@ -14,22 +14,22 @@ Paso 5: Devolver el resultado
     Devolver true si el texto es un palíndromo y false si no lo es. 
 */
 
-
-let text1 = "Anita lava la tina";
-let text2 = "Hola, mundo!"
-
 function isPalindrome(txt) {
     // Pasamos a minúscula todo
     let lower = txt.toLowerCase();
-    // Buscamos y reemplazamos todos los caracteres especiales (signo de exclamación, coma, punto, punto y coma, dos puntos y espacios ). La "g" al final de la expresión regular indica que la operación de reemplazo debe realizarse globalmente, es decir, que debe buscar y reemplazar todos los caracteres especiales en la cadena, no solo el primero que encuentre. Las comillas vacías detrás de la coma indica con lo que queremos reemplazar los caracteres de delante de la coma; es decir, queremos reemplazarlos por nada.
-    let noSpecialCharacters = lower.replace(/[!,.;:\s]/g, "");
-    // Convertimos el string sin espacios (noSpecialCharacters) en un array (split) y lo volvemos a unir y convertir en un string (join) ← Texto del derecho; de izquierda a derecha.
-    let strLtR = noSpecialCharacters.split().join();
+  
+    // Buscamos y reemplazamos todos los caracteres especiales (signo de exclamación, coma, punto, punto y coma, dos puntos y espacios ). La "g" al final de la expresión regular indica que la operación de reemplazo debe realizarse globalmente, es decir, que debe buscar y reemplazar todos los caracteres especiales en la cadena, no solo el primero que encuentre. Las comillas vacías detrás de la coma indica con lo que queremos reemplazar los caracteres de delante de la coma; es decir, queremos reemplazarlos por nada. ← Texto del derecho; de izquierda a derecha.
+    let strLtR = lower.replace(/[!,.;:\s]/g, "");
+
     // Convertimos el string escrito de izquierda a derecha en un array (split), le damos la vuelta (reverse) y lo volvemos a unir y convertir en un string (join) ← Texto del revés; de derecha a izquierda.
-    let strRtL = strLtR.split().reverse().join();
+    let strRtL = strLtR.split("").reverse().join("");
 
     // Comparamos si ambas cadenas son iguales y devolvemos el resultado (que es un booleano, true o false)
     return strLtR === strRtL;
 }
 
-console.log(isPalindrome(text1));
+console.log(isPalindrome("Anita lava la tina."));
+console.log(isPalindrome("¡Hola, mundo!"));
+console.log(isPalindrome("Yo de todo te doy."));
+console.log(isPalindrome("A ti no, bonita."));
+console.log(isPalindrome("Soy un ave."))
