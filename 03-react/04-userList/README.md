@@ -1,8 +1,6 @@
-# React + Vite
+# userList
+## Template: React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this repository I have been practicing many things, so everything may seem very disorganized. ![](https://github.com/angylearns/femcoders_fullstack/blob/main/03-react/04-userList/src/components/UserList.jsx) Files 1, 2, 3 are three tasks in which the next one uses the previous one and returns another functionality.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Components 1, 2, 3 are called and commented in UserListView and, to view each one, they must be uncommented.
