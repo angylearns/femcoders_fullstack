@@ -1,3 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function firstUnique(str) {
 
     // incializamos un objeto vacío
@@ -5,11 +42,11 @@ function firstUnique(str) {
     // convertimos el string a minúsculas
     str = str.toLowerCase();
     
-    // recorremos el string
+    // recorremos el string pasado por parámetro
     for (let i = 0; i < str.length; i++) {
         // si el caracter del string no existe en el objeto...
        if (!counts[str[i]]) {
-        // ...asignamos que está 1 vez.
+        // ...le asignamos un 1, de que está 1 vez.
          counts[str[i]] = 1;
        // ...si ya existe...
        } else {
@@ -17,6 +54,10 @@ function firstUnique(str) {
          counts[str[i]]++;
        }
     }
+
+    // mostramos el objeto para ver qué está cociéndose por acá
+    console.log(`↓ El objeto que muestra las letras y cuánto se repiten de ${str}`);
+    console.log(counts);
     
     // volvemos a recorrer el string...
     for (let i = 0; i < str.length; i++) {
@@ -27,11 +68,19 @@ function firstUnique(str) {
         }
     }
 
-    // si no se encuentra el primer caracter que aparece una vez, devolvemos null.
+    // si no se encuentra el primer caracter que aparece una vez, devolvemos null. Porque todos los caracteres aparecen 2 o más veces
     return null;
     
 }
-/* Esta línea de código define una función llamada firstNonRepeated que toma una cadena de texto como argumento (s) y devuelve el primer carácter que no se repite en la cadena. Aquí te explico cada parte:
+   
+console.log(firstUnique("analepsis"));
+console.log(firstUnique("desdar"));
+console.log(firstUnique("PAPA"));
+
+
+
+
+/* Esta línea de código define una función llamada firstUnique que toma una cadena de texto como argumento (s) y devuelve el primer carácter que no se repite en la cadena. Aquí te explico cada parte:
 
     [...s]: Esto convierte la cadena de texto en un array. El operador ... es conocido como el operador de propagación (spread operator), y cuando se usa con un array, crea una copia superficial del array.
 
@@ -42,9 +91,3 @@ function firstUnique(str) {
 Por lo tanto, esta línea de código devuelve el primer carácter que no se repite en la cadena, o null si todos los caracteres se repiten.*/
 
 // const firstUnique = s => [...s].find(i => s.indexOf(i) == s.lastIndexOf(i)) || null
-   
-console.log(firstUnique("casa"));
-console.log(firstUnique("mamochi"));
-console.log(firstUnique("Ecilia"));
-console.log(firstUnique("mama"));
-console.log(firstUnique("SALUD"));
