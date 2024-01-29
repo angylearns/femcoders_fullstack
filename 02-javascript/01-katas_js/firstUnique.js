@@ -1,39 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// IMPORTANTE: Este archivo está diseñado para verse en la terminal de VSC con Node
 
 function firstUnique(str) {
 
@@ -78,7 +43,7 @@ console.log(firstUnique("desdar"));
 console.log(firstUnique("PAPA"));
 
 
-
+// NOTA: Aquí viene un nivel SUPERIOR. La línea 58 es TODO lo de arriba hecho en una línea. Ahí se explica lo que hace.
 
 /* Esta línea de código define una función llamada firstUnique que toma una cadena de texto como argumento (s) y devuelve el primer carácter que no se repite en la cadena. Aquí te explico cada parte:
 
