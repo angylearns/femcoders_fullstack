@@ -31,6 +31,10 @@ In this repository I'll be uploading all the practices of what I'm learning in t
       <td>22/jan/2024</td>
       <td>Starting with ReactJS.</td>
    </tr>
+   <tr>
+      <td>02/feb/2024</td>
+      <td>Presentation of the <a src="https://github.com/angylearns/adminlistas_react">third project</a>.</td>
+   </tr>
 </table>
 
 ## Parts 📑
