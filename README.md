@@ -4,6 +4,14 @@
 
 In this repository I'll be uploading all the practices of what I'm learning in the Full-Stack Web Development bootcamp (nov/2023 - may/2024), which is going to be the definitive step to become a professional Full-stack Developer and to start building a consistent and exciting professional career.
 
+## Projects 📚
+
+1. [First project](https://github.com/angylearns/femtech_g3) [10/jan/2024] → Landing page.
+
+2. [Second project](https://github.com/angylearns/adminlistas_g4) [19/jan/2024] → School lists management app I (with JS DOM).
+
+3. [Third project](https://github.com/angylearns/adminlistas_react) [02/feb/2024] → School lists management app II (migrating to ReactJS).
+
 ## Dates 📅
 
 <table>
@@ -21,11 +29,11 @@ In this repository I'll be uploading all the practices of what I'm learning in t
    </tr>
    <tr>
       <td>10/jan/2024</td>
-      <td>Presentation of the <a src="https://github.com/angylearns/femtech_g3">first project</a>.</td>
+      <td>Presentation of the first project.</td>
    </tr>
     <tr>
       <td>19/jan/2024</td>
-      <td>Presentation of the <a src="https://github.com/angylearns/adminlistas_g4">second project</a>.</td>
+      <td>Presentation of the second project.</td>
    </tr>
     <tr>
       <td>22/jan/2024</td>
@@ -33,7 +41,7 @@ In this repository I'll be uploading all the practices of what I'm learning in t
    </tr>
    <tr>
       <td>02/feb/2024</td>
-      <td>Presentation of the <a src="https://github.com/angylearns/adminlistas_react">third project</a>.</td>
+      <td>Presentation of the third project.</td>
    </tr>
 </table>
 
