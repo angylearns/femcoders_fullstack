@@ -58,7 +58,27 @@ function createBox() {
 
 
 // 8) Haya un recuadro y un botón que permita crear una caja dentro de ese recuadro tantas veces como se quiera. || Has a box and a button that allows you to create a box inside of that box as many times as you want.
+
+function createManyBoxes() {
+    let rectangleSectionK8 = document.querySelector('#rectangle.eight');
+    
+    let newDiv = document.createElement("div");
+    newDiv.classList.add("divsK8");
+    rectangleSectionK8.appendChild(newDiv);
+}
+
+
 // 9) Haya un recuadro y un botón que permita crear una caja dentro de ese recuadro hasta cinco veces máximo. || Has a box and a button that allows you to create a box inside of that box up to five times.
+
+function createFiveBoxes() {
+    let rectangleSectionK9 = document.querySelector('#rectangle.nine');
+
+    
+    // something is wrong here. Got to find it and finish it
+        
+}
+
+
 // 10) Haya un recuadro, un botón que permita crear cajas dentro de ese recuadro y otro botón que permita eliminarlas, de una en una. || Has a box, a button that allows you to create boxes inside of that box and another button that allows you to delete them one by one.
 // 11) Haya un formulario con un campo, una caja y un botón. El botón deberá crear el contenido del formulario dentro de la caja. || Has a form with a field, a box and a button. The button should create the content of the form inside the box.
 // 12) Haya un formulario con tres campos, una caja y un botón. El botón deberá crear el contenido de los tres campos dentro de la caja, a la vez. || Has a form with three fields, a box and a button. The button should create the content of the three fields inside the box, at the same time.
