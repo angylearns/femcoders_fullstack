@@ -50,6 +50,9 @@ In this repository I'll be uploading all the practices of what I'm learning in t
 1. [HTML & CSS](https://github.com/angylearns/femcoders_fullstack/tree/main/01-html_css)
 2. [JavaScript](https://github.com/angylearns/femcoders_fullstack/tree/main/02-javascript)
    1. [Katas JS](https://github.com/angylearns/femcoders_fullstack/tree/main/02-javascript/01-katas_js)
-2. [React](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/first_project-practice)
+3. [React](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/first_project-practice)
    1. [First Steps](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/first_project-practice)
+   2. [Second first steps](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/02-second_project-keep_practice)
+   3. [Landing page with React](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/03-landing_page_angy)
+   4. [Practicing components](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/04-userList)
 4. ...to be continued.
