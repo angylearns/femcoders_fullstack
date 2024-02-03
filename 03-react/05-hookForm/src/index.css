@@ -1,0 +1,23 @@
+body {
+  background-color: #101010;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  /* align-items: center;
+  min-height: 100vh; */
+}
+
+#form label {
+ display: block;
+}
+
+#form input,
+#form select {
+  width: 100%;
+}
+
+#form span {
+  display: block;
+  color: tomato;
+  font-size: x-small;
+}
