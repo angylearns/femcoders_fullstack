@@ -1,9 +1,11 @@
+// ME QUEDÉ POR MINUTO 50:47
+
 import React from 'react'
 import { useForm } from 'react-hook-form'
 
 function Form() {
 
-    const { register, handleSubmit, formState: { errors }, watch } = useForm();
+    const { register, handleSubmit, formState: { errors }, watch, setValue } = useForm();
     /*
     Some useForm() options:
     - register('nombreDelInput', {objetoDeOpciones} ): Registra e identifica cada elemento/input del formulario.
@@ -13,6 +15,8 @@ function Form() {
     - formState (es un objeto): El valor actual de cómo está el formulario. Registra todos los valores del formulario y si alguno falla, crea un objeto Error y ese Error identifica qué input es el que ha fallado.
 
     - watch: Propiedad/función que al ejecutarse trae el estado actual del formulario. Eso nos sirve para validaciones y para condicionalmente mostrar, por ejemplo, otro input.
+
+    - setValue: Propiedad/función que permite establecer el valor de un input.
     */
 
     // Este console.log() nos va a dar el objeto errors con los errores de cada input (en caso de haberlos).
@@ -141,6 +145,24 @@ function Form() {
                 <option value="de">Germany</option>
                 <option value="pe">Peru</option>
             </select>
+            {
+            // Si queremos, por ejemplo, crear un campo tras verificar si la usuaria ha elegido España, hacemos esto ↓:
+            
+            watch('country') === 'es' && (
+                <>
+                    <select name="autComm" id="autComm" {...register('autComm', { required: true, message: 'Select an Autonomous Community' })}>
+                        <option value="none" selected disabled>Select an Autonomous Community</option>
+                        <option value="an">Andalucía</option>
+                        <option value="ar">Aragón</option>
+                        <option value="ib">Islas Baleares</option>
+                        <option value="ic">Islas Canarias</option>
+                    </select>
+                    {
+                        // ********** ESTO NO FUNCIONA. ECHARLE UN OJO ***********
+                        errors.autComm === "none" && <span>{errors.autComm.message}</span>
+                    }
+                </>
+            )}
 
             <label htmlFor="pic">Profile picture:</label>
             <input
@@ -154,11 +176,14 @@ function Form() {
                 type="checkbox"
                 id="terms"
                 {...register('terms', {
-                    required: true
+                    required: {
+                        value: true,
+                        message: 'Read and accept the terms and conditions, please.',
+                    }
                 })}    
             />
             {
-                errors.terms && <span>Read and accept the terms and conditions, please.</span>
+                errors.terms && <span>{errors.terms.message}</span>
             }
 
             <button type='submit'>Send</button>
