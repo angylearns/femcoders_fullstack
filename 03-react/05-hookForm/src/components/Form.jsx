@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 
 function Form() {
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors }, watch } = useForm();
     /*
     Some useForm() options:
     - register('nombreDelInput', {objetoDeOpciones} ): Registra e identifica cada elemento/input del formulario.
@@ -11,6 +11,8 @@ function Form() {
     - handleSubmit: Maneja el envío el formulario; por ejemplo, para que no se cargue solo o para que se pueda comprobar antes de enviarlo.
 
     - formState (es un objeto): El valor actual de cómo está el formulario. Registra todos los valores del formulario y si alguno falla, crea un objeto Error y ese Error identifica qué input es el que ha fallado.
+
+    - watch: Propiedad/función que al ejecutarse trae el estado actual del formulario. Eso nos sirve para validaciones y para condicionalmente mostrar, por ejemplo, otro input.
     */
 
     // Este console.log() nos va a dar el objeto errors con los errores de cada input (en caso de haberlos).
@@ -38,6 +40,7 @@ function Form() {
             />
             
             {/* Esta es una manera pesada de hacerlo.Aquí comprobamos si la propiedad name del objeto errors existe, porque si lo ponemos sin el signo de interrogación, da error, pues cuando no hay error, ni la propiedad name del objeto errors ni el objeto errors existen.
+
                 {
                 errors.name?.type === 'minLength' && <span>Name must be at least 2 characters.</span>
                 }
@@ -72,11 +75,14 @@ function Form() {
                 type="password"
                 id="password"
                 {...register('password', {
-                    required: true
+                    required: {
+                    value: true,
+                    message: 'Password is required, please.',
+                },
                 })}
             />
             {
-                errors.password && <span>Password is required, please.</span>
+                errors.password && <span>{errors.password.message}</span>
             }
 
             <label htmlFor="confirmPassword">Confirm password:</label>
@@ -84,11 +90,15 @@ function Form() {
                 type="password"
                 id="confirmPassword"
                 {...register('confirmPassword', {
-                    required: true
+                    required: {
+                        value: true,
+                        message: 'Confirm password is required, please.',
+                    },
+                    validate: (value) => value === watch('password') || 'The passwords do not match.',
                 })}    
             />
             {
-                errors.confirmPassword && <span>Confirm password, please.</span>
+                errors.confirmPassword && <span>{errors.confirmPassword.message}</span>
             }
 
             <label htmlFor="birtdate">Birthdate:</label>
@@ -96,11 +106,31 @@ function Form() {
                 type="date"
                 id="birtdate"
                 {...register('birtdate', {
-                    required: true
+                    required: {
+                        value: true,
+                        message: 'Birthdate is required, please.',
+                    },
+                    validate: (value) => {
+                        const birthdate = new Date(value);
+                        const today = new Date();
+                        const age = today.getFullYear() - birthdate.getFullYear();
+                        
+                        /*
+                        Podemos usar el operador ternario...
+
+                            return age >= 18 ? true : 'You must be at least 18 years old.' 
+                        
+                        ... o esto, que es más pro ↓:
+                        */
+
+                        return age >= 18 || 'You must be at least 18 years old.'
+                        
+                       
+                    }
                 })}
             />
             {
-                errors.birtdate && <span>Birthdate is required, please.</span>
+                errors.birtdate && <span>{errors.birtdate.message}</span>
             }
 
             <label htmlFor="country">Country:</label>
@@ -132,6 +162,11 @@ function Form() {
             }
 
             <button type='submit'>Send</button>
+
+            {/* Con esto vemos el valor del formulario cada vez que escribo algo en cada input gracias al watch() */}
+            <pre>
+                {JSON.stringify(watch(), null, 2)}
+            </pre>
         </form>
     )
 }
