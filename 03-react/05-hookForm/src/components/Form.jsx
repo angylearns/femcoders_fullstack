@@ -26,36 +26,52 @@ function Form() {
                 type="text"
                 id="name"
                 {...register('name', {
-                    required: true,
-                    minLength: 2,
+                    required: {
+                        value: true,
+                        message: 'Name is required, please.',
+                    },
+                    minLength: {
+                        value: 2,
+                        message: 'Name must be at least 2 characters.',
+                    },
                 })}
             />
-            {
-                errors.name?.type === 'required' && <span>Name is required, please.</span>
-            }
-            {
-                errors.name?.type === 'minLength' && <span>Name must be at least 2 characters.</span>
-            }
             
+            {/* Esta es una manera pesada de hacerlo.Aquí comprobamos si la propiedad name del objeto errors existe, porque si lo ponemos sin el signo de interrogación, da error, pues cuando no hay error, ni la propiedad name del objeto errors ni el objeto errors existen.
+                {
+                errors.name?.type === 'minLength' && <span>Name must be at least 2 characters.</span>
+                }
+            
+            En cambio, se implantan las propiedades de cada opción de validación del objeto errors (arriba, con value y message) y luego se hace lo siguiente ↓:
+            */}
+            {
+                errors.name && <span>{errors.name.message}</span>
+            }
 
             <label htmlFor="email">E-mail:</label>
             <input
                 type="email"
                 id="email"
                 {...register('email', {
-                    required: true
+                    required: {
+                        value: true,
+                        message: 'E-mail is required, please.',
+                },
+                    pattern: {
+                        value: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
+                        message: 'Invalid e-mail.',
+                    }
                 })}
             />
             {
-                errors.email && <span>Email is required, please.</span>
+                errors.email && <span>{errors.email.message}</span>
             }
 
             <label htmlFor="password">Password:</label>
             <input
                 type="password"
                 id="password"
-                {...register('password',
-                {
+                {...register('password', {
                     required: true
                 })}
             />
@@ -67,8 +83,7 @@ function Form() {
             <input
                 type="password"
                 id="confirmPassword"
-                {...register('confirmPassword',
-                {
+                {...register('confirmPassword', {
                     required: true
                 })}    
             />
@@ -108,8 +123,7 @@ function Form() {
             <input
                 type="checkbox"
                 id="terms"
-                {...register('terms',
-                {
+                {...register('terms', {
                     required: true
                 })}    
             />
