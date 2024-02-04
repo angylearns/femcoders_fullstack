@@ -55,4 +55,5 @@ In this repository I'll be uploading all the practices of what I'm learning in t
    2. [Second first steps](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/02-second_project-keep_practice)
    3. [Landing page with React](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/03-landing_page_angy)
    4. [Practicing components](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/04-userList)
+   5. [Learning about the Hook Form](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/05-hookForm)
 4. ...to be continued.
