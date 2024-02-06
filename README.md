@@ -56,5 +56,5 @@ In this repository I'll be uploading all the practices of what I'm learning in t
    3. [Landing page with React](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/03-landing_page_angy)
    4. [Practicing components](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/04-userList)
    5. [Learning about the Hook Form](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/05-hookForm)
-   6. [Learning and understanding React Router Dom](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/06-routerDOM)
+   6. [Learning and understanding React Router DOM](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react/06-routerDOM)
 4. ...to be continued.
