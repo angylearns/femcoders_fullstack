@@ -10,8 +10,8 @@
     (0), 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, ∞
     */
 
-// 1. Creamos una función que acepte un número posicion como argumento. Este número será el índice/posicion de la secuencia de Fibonacci que deseamos calcular.
-/*
+// 1. Creamos una función que acepte un número posicion como argumento. Este número será el índice/posición de la secuencia de Fibonacci que deseamos calcular.
+
 function fib(posicion) {
     // 2. Comprobamos si posicion es 0 o 1. Si es así, devolvemos posicion, ya que son los dos primeros números de la secuencia y aún no se suman con nadie.
     if (posicion <=  1) {
@@ -22,14 +22,14 @@ function fib(posicion) {
     let a =  0;
     let b =  1;
 
-    // 4. Utilizamos un bucle for que comienza en 2 (porque los dos primeros números de la secuencia ya han sido definidos comy 0 y 1) y continúa hasta posicion.  
-    for (let i =  1; i <= posicion; i++) {
+    // 4. Utilizamos un bucle for que comienza en 2 (porque los dos primeros números de la secuencia ya han sido definidos como 0 y 1) y continúa hasta posicion.  
+    for (let i =  2; i <= posicion; i++) {
         console.log("♥");
-        console.log(`Nada más entrar al bucle: i es ${i}, a es ${a} y b es ${b}.`);
+        console.log(`El valor de i en el bucle es ${i}, el de a es ${a} y el de b es ${b}.`);
 
         // En cada iteración del bucle, calcula la suma de a y b y almacena el resultado en una variable suma.
         let suma = a + b;
-        console.log(`la suma de a y b es ${suma}`);
+        console.log(`La suma de a y b es ${suma}`);
         
 
         // Luego, actualiza a y b para la próxima iteración:
@@ -42,7 +42,7 @@ function fib(posicion) {
         b = suma;
         console.log(`Ahora b es ${b}.`);
     }
-    // 5. Al final del bucle, b contendrá el número de la secuencia que que está en al posición que mandamos como parámetro. Devuelve b como el resultado de la función.
+    // 5. Al final del bucle, b contendrá el número que está en la posición que mandamos como parámetro. Devuelve b como el resultado de la función.
     return b;
 }
 
@@ -52,7 +52,6 @@ console.log(fib(15));
 console.log(fib(3)); 
 console.log(fib(20)); 
 console.log(fib(5)); 
-*/
 
 
 
@@ -76,7 +75,7 @@ function fibonacci(posicion) {
     return posicion;
   }
 
-  // En este enfoque, se crea un array (de largo posicion + 1) fib para almacenar los números de Fibonacci calculados hasta el momento.
+  // En este enfoque, se crea un array fib (de largo posicion + 1) para almacenar los números de Fibonacci calculados hasta el momento.
   let fib = new Array(posicion +  1);
   // Se inicializan los dos primeros números de la secuencia (0 y 1) en las posiciones correspondientes del array.
   fib[0] =  0;
@@ -84,10 +83,10 @@ function fibonacci(posicion) {
 
   // Luego, para cada número de la secuencia que aún no se ha calculado, se suman los dos números anteriores en el array y se almacena el resultado en la posición correspondiente.
   for (let i =  2; i <= posicion; i++) {
-    fib[i] = fib[i -  1] + fib[i -  2];
+    fib[i] = fib[i - 1] + fib[i - 2];
   }
 
-  // Al final, se devuelve el n-ésimo número de Fibonacci almacenado en el array.
+  // Al final, se devuelve el número de la posición que buscamos, que se encuentra almacenado en el array.
   return fib[posicion];
 }
 
