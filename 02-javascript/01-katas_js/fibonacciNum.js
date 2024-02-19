@@ -46,11 +46,9 @@ function fib(posicion) {
     return b;
 }
 
-console.log(fib(9)); 
-console.log(fib(10)); 
-console.log(fib(15)); 
+console.log(fib(4)); 
+console.log(fib(7)); 
 console.log(fib(3)); 
-console.log(fib(20)); 
 console.log(fib(5)); 
 
 
@@ -61,11 +59,7 @@ console.log(fib(5));
 
 
 
-
-
-
-
-
+/*
 
 // Otra forma común de calcular la secuencia de Fibonacci es mediante programación dinámica, que es más eficiente que la recursión para valores grandes de posicion, ya que evita cálculos redundantes.
 
@@ -91,7 +85,7 @@ function fibonacci(posicion) {
 }
 
 console.log("Función fibonacci:")
-console.log(fibonacci(10)); //  55
-console.log(fibonacci(15)); //  610
+console.log(fibonacci(1000)); //  55
+//console.log(fibonacci(15)); //  610
 
-
+*/
