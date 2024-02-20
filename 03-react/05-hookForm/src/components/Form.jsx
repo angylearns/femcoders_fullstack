@@ -20,7 +20,7 @@ function Form() {
     - setValue: Propiedad/función que permite establecer el valor de un input.
     */
 
-    // Este console.log() nos va a dar el objeto errors con los errores de cada input (en caso de haberlos).
+    // Este console.log() nos va a dar el objeto errors con los errores de cada input (en caso de haberlos), Y NOS DEVUELVE UN OBJETO CADA VEZ QUE TECLEAMOS, ES UNA LOCURAAA.
     console.log(errors);
 
     // Para un código más limpio, podemos crear una función onSubmit para manejar la función handleSubmit.
