@@ -2,11 +2,11 @@
 
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import axios from 'axios';
+import { handleSubmit } from '../../HandlerUser';
 
 function Form() {
 
-    const { register, handleSubmit, formState: { errors }, watch, setValue } = useForm();
+    const { register, handleSubmit: rHandleSubmit, formState: { errors }, watch, setValue } = useForm();
     /*
     Some useForm() options:
     - register('nombreDelInput', {objetoDeOpciones} ): Registra e identifica cada elemento/input del formulario.
@@ -24,14 +24,8 @@ function Form() {
     console.log(errors);
 
     // Para un código más limpio, podemos crear una función onSubmit para manejar la función handleSubmit.
-    const onSubmit = handleSubmit((data) => {
-        axios.post('http://localhost:3001/users', data)
-          .then((response) => {
-            console.log(response.data);
-          })
-          .catch((error) => {
-            console.error('Error al guardar los datos:', error);
-          });
+    const onSubmit = rHandleSubmit((data) => {
+        handleSubmit(data);
       });
       
 
