@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import axios from 'axios';
 
 function Form() {
 
@@ -23,7 +24,16 @@ function Form() {
     console.log(errors);
 
     // Para un código más limpio, podemos crear una función onSubmit para manejar la función handleSubmit.
-    const onSubmit = handleSubmit((data) => console.log(data));
+    const onSubmit = handleSubmit((data) => {
+        axios.post('http://localhost:3001/users', data)
+          .then((response) => {
+            console.log(response.data);
+          })
+          .catch((error) => {
+            console.error('Error al guardar los datos:', error);
+          });
+      });
+      
 
     return (
         <form onSubmit={onSubmit}>
