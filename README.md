@@ -57,7 +57,7 @@ In this repository I'll be uploading all the practices of what I'm learning in t
    </tr>
    <tr>
       <td>07/mar/2024</td>
-      <td>Starting with Back End.</td>
+      <td>Starting with <strong>Back End</strong>.</td>
    </tr>
 </table>
 
