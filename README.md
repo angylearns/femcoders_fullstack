@@ -10,7 +10,7 @@ In this repository I'll be uploading all the practices of what I'm learning in t
 
 2. [Second project](https://github.com/angylearns/adminlistas_g4) [19/jan/2024] → School lists management app I (with JS DOM).
 
-3. [Third project](https://github.com/angylearns/adminlistas_react) [02/feb/2024] → School lists management app II (migrating to ReactJS).
+3. [Third project](https://github.com/angylearns/adminlistas_react) [02/feb/2024] → School lists management app II (migrating to React.js).
 
 4. [Fourth project](https://github.com/angylearns/wheel_of_doom) [14/feb/2024] → School Wheel of Doom app.
 
@@ -41,7 +41,7 @@ In this repository I'll be uploading all the practices of what I'm learning in t
    </tr>
     <tr>
       <td>22/jan/2024</td>
-      <td>Starting with ReactJS.</td>
+      <td>Starting with React.js.</td>
    </tr>
    <tr>
       <td>02/feb/2024</td>
