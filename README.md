@@ -21,43 +21,43 @@ In this repository I'll be uploading all the practices of what I'm learning in t
 <table>
    <tr>
       <td>07/dec/2023</td>
-      <td>Starting with HTML & CSS: Flexbox, grid, responsive design...</td>
+      <td>👩🏽‍🎓 Starting with HTML & CSS: Flexbox, grid, responsive design...</td>
    </tr>
    <tr>
       <td>14/dec/2023</td>
-      <td>Learning GIT environment and commands.</td>
+      <td>👩🏽‍🎓 Learning GIT environment and commands.</td>
    </tr>
    <tr>
       <td>08/jan/2024</td>
-      <td>Starting with JavaScript.</td>
+      <td>👩🏽‍🎓 Starting with JavaScript.</td>
    </tr>
    <tr>
       <td>10/jan/2024</td>
-      <td>Presentation of the first project.</td>
+      <td>👩🏽‍🏫 Presentation of the first project.</td>
    </tr>
     <tr>
       <td>19/jan/2024</td>
-      <td>Presentation of the second project.</td>
+      <td>👩🏽‍🏫 Presentation of the second project.</td>
    </tr>
     <tr>
       <td>22/jan/2024</td>
-      <td>Starting with React.js.</td>
+      <td>👩🏽‍🎓 Starting with React.js.</td>
    </tr>
    <tr>
       <td>02/feb/2024</td>
-      <td>Presentation of the third project.</td>
+      <td>👩🏽‍🏫 Presentation of the third project.</td>
    </tr>
    <tr>
       <td>14/feb/2024</td>
-      <td>Presentation of the fourth project.</td>
+      <td>👩🏽‍🏫 Presentation of the fourth project.</td>
    </tr>
    <tr>
       <td>06/mar/2024</td>
-      <td>Presentation of the fifth project.</td>
+      <td>👩🏽‍🏫 Presentation of the fifth project.</td>
    </tr>
    <tr>
       <td>07/mar/2024</td>
-      <td>Starting with <strong>Back End</strong>.</td>
+      <td>👩🏽‍🎓 Starting with <strong>Back End</strong>.</td>
    </tr>
 </table>
 
