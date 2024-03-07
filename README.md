@@ -14,7 +14,7 @@ In this repository I'll be uploading all the practices of what I'm learning in t
 
 4. [Fourth project](https://github.com/angylearns/wheel_of_doom) [14/feb/2024] → School Wheel of Doom app.
 
-5. [Fifth project](https://github.com/angylearns/marketplace_animals-p5e4) [06/march/2024] → "+kota" Marketplace
+5. [Fifth project](https://github.com/angylearns/marketplace_animals-p5e4) [06/mar/2024] → "+kota" Marketplace
 
 ## Dates 📅
 
@@ -56,7 +56,7 @@ In this repository I'll be uploading all the practices of what I'm learning in t
       <td>Presentation of the fifth project.</td>
    </tr>
    <tr>
-      <td>06/mar/2024</td>
+      <td>07/mar/2024</td>
       <td>Starting with Back End.</td>
    </tr>
 </table>
