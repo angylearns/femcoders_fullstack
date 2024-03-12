@@ -59,6 +59,10 @@ In this repository I'll be uploading all the practices of what I'm learning in t
       <td>07/mar/2024</td>
       <td>👩🏽‍🎓 Starting with <strong>Back End</strong>.</td>
    </tr>
+   <tr>
+      <td>11/mar/2024</td>
+      <td>👩🏽‍🎓 Learning SQL and PHPMyAdmin.</td>
+   </tr>
 </table>
 
 ## Parts 📑
