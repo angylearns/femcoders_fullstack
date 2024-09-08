@@ -2,9 +2,9 @@
 
 ![Coders](img/coders.png)
 
-In this repository I'll be uploading all the practices of what I'm learning in the Full-Stack Web Development bootcamp (nov/2023 - may/2024), which is going to be the definitive step to become a professional Full-stack Developer and to start building a consistent and exciting professional career.
+In this repository, you'll find all the practices from the Full-Stack Web Development bootcamp (Nov 2023 - May 2024), which marked a significant step toward becoming a professional Full-Stack Developer and starting a consistent and exciting career.
 
-## Projects 📚
+## Projects 📚 (different repositories)
 
 1. [First project](https://github.com/angylearns/femtech_g3) [10/jan/2024] → Landing page.
 
@@ -14,56 +14,15 @@ In this repository I'll be uploading all the practices of what I'm learning in t
 
 4. [Fourth project](https://github.com/angylearns/wheel_of_doom) [14/feb/2024] → School Wheel of Doom app.
 
-5. [Fifth project](https://github.com/angylearns/marketplace_animals-p5e4) [06/mar/2024] → "+kota" Marketplace
+5. [Fifth project](https://github.com/angylearns/marketplace_animals-p5e4) [06/mar/2024] → "+kota" Marketplace.
 
-## Dates 📅
+6. Sixth project [13/mar/2024] → Relational Database Structure - No code.
 
-<table>
-   <tr>
-      <td>07/dec/2023</td>
-      <td>👩🏽‍🎓 Starting with HTML & CSS: Flexbox, grid, responsive design...</td>
-   </tr>
-   <tr>
-      <td>14/dec/2023</td>
-      <td>👩🏽‍🎓 Learning GIT environment and commands.</td>
-   </tr>
-   <tr>
-      <td>08/jan/2024</td>
-      <td>👩🏽‍🎓 Starting with JavaScript.</td>
-   </tr>
-   <tr>
-      <td>10/jan/2024</td>
-      <td>👩🏽‍🏫 Presentation of the first project.</td>
-   </tr>
-    <tr>
-      <td>19/jan/2024</td>
-      <td>👩🏽‍🏫 Presentation of the second project.</td>
-   </tr>
-    <tr>
-      <td>22/jan/2024</td>
-      <td>👩🏽‍🎓 Starting with React.js.</td>
-   </tr>
-   <tr>
-      <td>02/feb/2024</td>
-      <td>👩🏽‍🏫 Presentation of the third project.</td>
-   </tr>
-   <tr>
-      <td>14/feb/2024</td>
-      <td>👩🏽‍🏫 Presentation of the fourth project.</td>
-   </tr>
-   <tr>
-      <td>06/mar/2024</td>
-      <td>👩🏽‍🏫 Presentation of the fifth project.</td>
-   </tr>
-   <tr>
-      <td>07/mar/2024</td>
-      <td>👩🏽‍🎓 Starting with <strong>Back End</strong>.</td>
-   </tr>
-   <tr>
-      <td>11/mar/2024</td>
-      <td>👩🏽‍🎓 Learning SQL and PHPMyAdmin.</td>
-   </tr>
-</table>
+7. [Seventh project](https://github.com/angylearns/bd_malaguenos) [27/mar/2024] → Database Models.
+
+8. [Eighth project](https://github.com/angylearns/full_stack-art_gallery) [28/apr/2024] → Full Stack Art Gallery (Galería del Coleccionista).
+
+9. [Last project](https://github.com/angylearns/oviva_care) [31/may/2024] → Full Stack project with real client - Oviva Care.
 
 ## Parts 📑
 
@@ -71,4 +30,3 @@ In this repository I'll be uploading all the practices of what I'm learning in t
 2. [JavaScript](https://github.com/angylearns/femcoders_fullstack/tree/main/02-javascript)
 3. [React](https://github.com/angylearns/femcoders_fullstack/tree/main/03-react)
 4. [Python](https://github.com/angylearns/femcoders_fullstack/tree/main/04-python)
-5. ...to be continued.
